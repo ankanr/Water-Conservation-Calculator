@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css"
+      integrity="sha512-+AdxWMqfOdtwMuXK482e5OgHYzN06s97n3NTAeAdTlUvlIgCBx3SUKvMculJIedylDfVCaQFdD6HaojI4aeBUA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Water Conservation Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="ui header">Water Conservation Calculator</h1>
+      <div class="start-btn ui animated button">
+        <div class="visible content">Start</div>
+        <div class="hidden content">
+          <i class="right arrow icon"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="ui header">
+        <div id="ques"></div>
+      </h2>
+      <div class="ui input">
+        <input id="ans" type="text" />
+      </div>
+      <div class="ui negative message" style="display: none">
+        <div class="header">Please enter a value in the input field</div>
+        <p>You need to enter a numeric value in the text field</p>
+      </div>
+      <button class="next ui button" style="display: none">Next</button>
+      <button class="submit ui button" style="display: none">Submit</button>
+    </div>
+    <div class="container" style="display: none">
+      <div class="results">
+        <table class="ui celled table">
+          <thead>
+            <tr>
+              <th>Water Use Areas</th>
+              <th>Your Use (in ltr)</th>
+              <th>Average Efficient Use (in ltr)</th>
+              <th class="required">Water Saved (in ltr)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Toilet</td>
+              <td id="toilet-your-use"></td>
+              <td id="toilet-avg-use"></td>
+              <td id="toilet-save"></td>
+            </tr>
+            <tr>
+              <td>Shower</td>
+              <td id="shower-your-use"></td>
+              <td id="shower-avg-use"></td>
+              <td id="shower-save"></td>
+            </tr>
+            <tr>
+              <td>Faucets</td>
+              <td id="faucet-your-use"></td>
+              <td id="faucet-avg-use"></td>
+              <td id="faucet-save"></td>
+            </tr>
+            <tr>
+              <td>Cloth Washer</td>
+              <td id="cw-your-use"></td>
+              <td id="cw-avg-use"></td>
+              <td id="cw-save"></td>
+            </tr>
+            <tr>
+              <td>Hand-Washed Dishes</td>
+              <td id="hw-your-use"></td>
+              <td id="hw-avg-use"></td>
+              <td id="hw-save"></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Total Water Saved</th>
+              <th></th>
+              <th></th>
+              <th id="water-saved"></th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  <footer>&copy; Ankan Roy 2022</footer>
+</html>
