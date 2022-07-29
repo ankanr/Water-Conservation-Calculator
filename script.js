@@ -20,8 +20,8 @@ let quesIndex = 0;
 quesList = [
   { q: 'How many people in household?', a: '' },
   { q: 'Average number of flushes a person does in a day', a: '' },
-  { q: 'How long does a person shower in a day?', a: '' },
-  { q: 'How long does a person use a faucet?', a: '' },
+  { q: 'How long does a person shower in a day (in mins)?', a: '' },
+  { q: 'How long does a person use a faucet (in mins)?', a: '' },
   { q: 'How many times is the cloth washer loaded?', a: '' },
   { q: 'How many times are the dishes handwashed?', a: '' },
 ];
