@@ -9,6 +9,9 @@ const message = document.getElementsByClassName('message')[0];
 ans.style.display = 'none';
 submit.style.display = 'none';
 
+
+
+
 let numberOfHouseholdMembers;
 let avgNumberOfFlushes;
 let showerTime;
